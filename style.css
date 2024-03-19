@@ -2,11 +2,11 @@
 /* Reset Style */
 * {
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  */
     
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -15,15 +15,16 @@
 /* Default Typography */
 body { 
     font-size: 22px;
+    line-height: 1.5;
 }
 /* Navigation Bar */
 .navigation-bar {
-    background-color: rgb(114, 225, 114);
+    background-color: rgb(106, 239, 106);
    
     /* padding: 10px 10px; */
     
-    width:100%;
-    /* height: 120px; */
+     width:100%;
+     /* height: 20vh;  */
     
 }
 /* List Items */
@@ -101,6 +102,8 @@ body {
     /* Make Menu Visible */
      .main-menu {
          display: block;
+        
+         
      }
     /* Style Navigation Bar Start*/
     .navigation-bar {
@@ -108,7 +111,7 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 15px 40px;
-     
+        height: 90px;
     }
     .main-menu {
         display: flex;
@@ -143,6 +146,7 @@ body {
     .logo:hover,
     .menu-item a:hover {
         color: rgb(216, 11, 11);
+        
     }
 }
 /* For Navtab Ends */
@@ -191,28 +195,33 @@ body {
     /* background-color:  rgba(10, 178, 230, 0.906) */
   }
   /* home-content style starts */
- 
+ .home{
+    margin-bottom: 20px;
+    
+    padding: 0 10px;
+ }
   .home h2{
     display: flex;
     align-items: center;
     justify-content: center;
-   margin: 25px;
+   margin: 30px;
    
   }
   .home h3{
-    margin: 10px;
-    padding: 2px;
+    margin:30px;
+    
   }
   
     .home li{
+        /* list-style: none; */
         list-style: inside;
-        margin: 10px;
-       padding:2px;
+        margin: 40px;
+       
     }
     .home p{
         
-      margin: 10px;
-      padding: 2px;
+      margin: 40px;
+      
     }
     /* home-content style ends */
 
@@ -220,13 +229,13 @@ body {
  #about-us img {
     
     float: right;
-    height:500px;
-    width: 500px;
-    margin: 10px;
+    height:100vh;
+    width: 40%;
+    /* margin:60px; */
     padding-bottom: 10px;
-    border: 10px ;
-    border-radius: 12px;
-    /* box-shadow: 1px 1px 1px 1px; */
+    border: 20px ;  
+     border-radius: 12px;
+     /* box-shadow: 0px 1px 1px 0px;    */
     cursor: pointer;
     transition: 400ms;  
    
@@ -235,19 +244,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 30px;
+    /* padding: 0px; */
     
    }
    #about-us p{
-    margin: 20px;
+    margin: 40px;
    }
  #about-us h3 {
     
     color: #070000;
-    margin: 15px;
+    margin: 30px;
  }
  #about-us li{
-    margin: 15px;
+    margin: 40px;
     list-style: inside;
  }
  /* about-us content style ends */
@@ -278,23 +288,23 @@ body {
   /* granites style starts */
 .granite{
     margin-bottom: 20px;
-    
+    padding: 0 10px;
 }
   .granite h2{
- /* margin: 10px; */
+ margin: 30px;
  display:flex;
  align-items: center;
  justify-content: center;
   }
   .granite h3{
-    margin: 10px;
+    margin: 30px;
   }
   .granite p{
-    margin: 20px;
+    margin: 40px;
     /* padding: 2px; */
   }
   .granite li{
-    margin:20px ;
+    margin:40px ;
    
     list-style:inside;
   }
