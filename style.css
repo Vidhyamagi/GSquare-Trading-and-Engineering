@@ -1,12 +1,8 @@
 /* Basic Styles Starts */
 /* Reset Style */
 * {
-    /* font-family: Arial, Helvetica, sans-serif; */
-     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  */
-    
-    
-    
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+     font-family: proxima-nova;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -20,12 +16,7 @@ body {
 /* Navigation Bar */
 .navigation-bar {
     background-color: rgb(106, 239, 106);
-   
-    /* padding: 10px 10px; */
-    
-     width:100%;
-     /* height: 20vh;  */
-    
+     width:100%;    
 }
 /* List Items */
 .main-menu,
@@ -107,11 +98,14 @@ body {
      }
     /* Style Navigation Bar Start*/
     .navigation-bar {
+         
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 15px 40px;
         height: 100px;
+       
+         
     }
     .main-menu {
         display: flex;
@@ -155,7 +149,7 @@ body {
     width: 100%;
     height: 600px;
     position: relative;
-    
+   
 }
  .bannerslides img{
     height:600px ;
@@ -191,41 +185,46 @@ body {
    }
 .active, .dot:hover {
     background-color: rgb(114, 225, 114);
-    /* background-color:rgb(11, 121, 195); */
-    /* background-color:  rgba(10, 178, 230, 0.906) */
+    
   }
   /* home-content style starts */
- .home{
+  
+  .home{
+    /* margin: 20px; */
     margin-bottom: 20px;
-    
     padding: 0 10px;
+ } 
+ .home h3 {
+    padding: 10px;
  }
   .home h2{
     display: flex;
     align-items: center;
     justify-content: center;
-   margin: 30px;
    
   }
-  .home h3{
-    margin:30px;
-    
-  }
-  
     .home li{
         /* list-style: none; */
-        list-style: inside;
-        margin: 40px;
-       
+         /* list-style: inside;  */
+        line-height: 1.5;
+        margin-left: 30px;
+        padding:1px;
     }
     .home p{
-        
-      margin: 40px;
+       margin-left: 30px;
+       line-height: 1.5em;
+       padding: 1px;
+      
       
     }
     /* home-content style ends */
 
     /* about-us content style starts */
+    .about{
+     /* margin: 30px; */
+     margin-bottom: 20px;
+     padding: 0 10px;
+    }
  #about-us img {
     
     float: right;
@@ -243,22 +242,24 @@ body {
    #about-us h2{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 30px;
-    /* padding: 0px; */
-    
+    justify-content: center; 
    }
-   #about-us p{
-    margin: 40px;
-   }
- #about-us h3 {
-    
-    color: #070000;
-    margin: 30px;
+   #about-us h3 {
+    margin: 20px;
+    /* margin-left: 20px; */
+    padding: 1px;
  }
+   #about-us p{
+    margin-left: 30px;
+    line-height: 1.5em;
+    padding: 1px;
+   }
+  
  #about-us li{
-    margin: 40px;
-    list-style: inside;
+    line-height: 1.5;
+    margin-left: 30px;
+    padding:2px;
+     
  }
  /* about-us content style ends */
   #media{
@@ -287,26 +288,35 @@ body {
   /* project-private style ends */
   /* granites style starts */
 .granite{
-    margin-bottom: 20px;
-    padding: 0 10px;
+    /* margin: 30px; */
+     margin-bottom: 20px;
+     padding: 0 20px;
 }
   .granite h2{
- margin: 30px;
+ padding-bottom: 15px;
  display:flex;
  align-items: center;
  justify-content: center;
+ 
   }
   .granite h3{
-    margin: 30px;
+   /* margin: 20px; */
+    padding:0 10px ; 
+    padding: 3px;
+
   }
   .granite p{
-    margin: 40px;
-    /* padding: 2px; */
+    margin-left: 30px;
+    line-height: 1.5em;
+    padding:2px;
   }
+  
   .granite li{
-    margin:40px ;
-   
-    list-style:inside;
+     /* list-style: none;
+     */
+    line-height: 1.5;
+    margin-left: 30px;
+    padding:2px;  
   }
   /* footer style */
 body{
@@ -331,6 +341,7 @@ ul{
 .footer{
    width: 25%;
    padding: 0 15px;
+   height:50vh;
 }
 .footer h2{
 	font-size: 20px;
@@ -394,7 +405,12 @@ ul{
 	color: #24262b; 
     background-color: #ebdddd;
 }
-
+ .copyright-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
 
 @media(max-width: 767px){
   .footer{

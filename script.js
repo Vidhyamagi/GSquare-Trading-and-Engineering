@@ -82,4 +82,12 @@ scrollbar.addEventListener('click',function(){
 
 })
 
+ const navLink = document.querySelectorAll('.navlink');
+ const windowPathname = window.location.pathname;
 
+ navLink.forEach(navLink =>{
+  const navLinkPathname = new URL(navLink.href).pathname;
+  if((windowPathname === navLinkPathname)||(windowPathname === '/index.html' && navLinkPathname ==='/home.html')){
+   navLink.classList.add('active');
+  }
+ });
