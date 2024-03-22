@@ -252,13 +252,13 @@ body {
    #about-us p{
     margin-left: 30px;
     line-height: 1.5em;
-    padding: 1px;
+    padding: 3px;
    }
   
  #about-us li{
     line-height: 1.5;
     margin-left: 30px;
-    padding:2px;
+    padding:3px;
      
  }
  /* about-us content style ends */
